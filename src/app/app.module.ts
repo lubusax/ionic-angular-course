@@ -10,9 +10,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 
-import { UniqueDeviceID } from '@ionic-native/unique-device-id/ngx';
-import { Uid } from '@ionic-native/uid/ngx';
-import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+// import { UniqueDeviceID } from '@ionic-native/unique-device-id/ngx';
+// import { Uid } from '@ionic-native/uid/ngx';
+// import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
+
+import { NFC, Ndef } from '@ionic-native/nfc/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,9 +23,11 @@ import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
   providers: [
     StatusBar,
     SplashScreen,
-    UniqueDeviceID,
-    Uid,
-    AndroidPermissions,
+    // UniqueDeviceID,
+    // Uid,
+    // AndroidPermissions,
+    NFC,
+    Ndef,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

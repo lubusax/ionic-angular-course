@@ -38,22 +38,16 @@ MIT
 @angular/router
 MIT
 
-@ionic-native/android-permissions
+@ionic-native/core
 MIT
 
-@ionic-native/core
+@ionic-native/nfc
 MIT
 
 @ionic-native/splash-screen
 MIT
 
 @ionic-native/status-bar
-MIT
-
-@ionic-native/uid
-MIT
-
-@ionic-native/unique-device-id
 MIT
 
 @ionic/angular
