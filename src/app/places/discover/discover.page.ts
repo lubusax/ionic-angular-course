@@ -7,6 +7,7 @@ import { PlacesService } from '../places.service';
 // import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
 
 import { NFC, Ndef } from '@ionic-native/nfc/ngx';
+import { Device } from '@ionic-native/device/ngx';
 
 @Component({
   selector: 'app-discover',
@@ -17,11 +18,13 @@ export class DiscoverPage implements OnInit {
 
   loadedPlaces: Place[];
   nfcStatus;
+  deviceID: string;
 
   constructor(
     private placesService: PlacesService,
     private nfc: NFC,
-    private ndef: Ndef
+    private ndef: Ndef,
+    private device: Device
     // private uniqueDeviceID: UniqueDeviceID
     // private uid: Uid,
     // private androidPermissions: AndroidPermissions
@@ -39,6 +42,10 @@ export class DiscoverPage implements OnInit {
 
   ngOnInit() {
     this.loadedPlaces = this.placesService.places;
+    this.deviceID = this.device.uuid;
+    console.log('Device UUID is: ' + this.deviceID);
+
+
     // this.getUniqueDeviceID();
     // this.uniqueDeviceID.get()
     //   .then((uuid: any) => console.log(uuid))

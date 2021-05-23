@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 // import { AndroidPermissions } from '@ionic-native/android-permissions/ngx';
 
 import { NFC, Ndef } from '@ionic-native/nfc/ngx';
+import { Device } from '@ionic-native/device/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { NFC, Ndef } from '@ionic-native/nfc/ngx';
     // AndroidPermissions,
     NFC,
     Ndef,
+    Device,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
