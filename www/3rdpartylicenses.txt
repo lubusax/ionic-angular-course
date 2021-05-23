@@ -38,6 +38,9 @@ MIT
 @angular/router
 MIT
 
+@ionic-native/android-permissions
+MIT
+
 @ionic-native/core
 MIT
 
@@ -45,6 +48,12 @@ MIT
 MIT
 
 @ionic-native/status-bar
+MIT
+
+@ionic-native/uid
+MIT
+
+@ionic-native/unique-device-id
 MIT
 
 @ionic/angular
