@@ -42,7 +42,7 @@ export class DiscoverPage implements OnInit {
 
   ngOnInit() {
     this.loadedPlaces = this.placesService.places;
-    this.deviceID = this.device.uuid;
+    this.deviceID = this.device.model;
     console.log('Device UUID is: ' + this.deviceID);
 
 
